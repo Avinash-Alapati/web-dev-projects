@@ -1,0 +1,1 @@
+- This repository is a curated collection of my mini and major web development projects. From basic HTML/CSS pages to dynamic full-stack apps, each project showcases different skills and concepts I’ve learned along the way. Feel free to explore, learn, or even contribute!
