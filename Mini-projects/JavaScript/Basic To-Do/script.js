@@ -16,12 +16,25 @@ btn.addEventListener('click' , function () {
     // console.log("Clicked!");
 });
 
-let delBtns = document.querySelectorAll('.delete');
+// Event Deligation - for deleting new Tasks using delete Button
+// So we are applying delete for ul not for button
 
-for(delBtn of delBtns){  // only applies for existing elements doesnt work for new elements
-    delBtn.addEventListener('click' , function () {
-        let par = this.parentElement;
-        par.remove();
-    });
-}
+ul.addEventListener("click" , function (event) {
+    if(event.target.nodeName == 'BUTTON' ){
+        let listItem = event.target.parentElement;
+        listItem.remove();
+        // console.log("Delete")
+    }
+});
+
+
+
+// let delBtns = document.querySelectorAll('.delete');
+
+// for(delBtn of delBtns){  // only applies for existing elements doesnt work for new elements
+//     delBtn.addEventListener('click' , function () {
+//         let par = this.parentElement;
+//         par.remove();
+//     });
+// }
 
